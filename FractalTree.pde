@@ -31,10 +31,13 @@ public void drawBranches(int x,int y, double branchLength, double angle)
 	line(x,y,endx1,endy1);
 	line(x,y,endx2,endy2);
 
+
+
 	if (branchLength>=smallestBranch){
 		//angle+=0.25;
 		drawBranches(endx1,endy1,branchLength,angle-0.3);
 		drawBranches(endx2,endy2,branchLength,angle-0.1);
+
 	}
 	
 
